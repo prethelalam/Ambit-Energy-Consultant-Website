@@ -1,0 +1,31 @@
+.body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.header { /*use these margins for the logo, the move the actual header a little to the right of the logo*/
+    margin: 25px 100px 75px 100px;
+    position: fixed;
+}
+
+nav {
+    align-items: right;
+}
+
+.number {
+    text-align: center;
+}
+
+.tabs {
+    text-align: right;
+    display: inline;
+    
+}
+
+.name {
+    font-size: 18px;
+
+}
+
+.title, .company {
+    font-size: 16px; 
+}
