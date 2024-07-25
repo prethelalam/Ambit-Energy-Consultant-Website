@@ -1,31 +1,115 @@
-.body {
+body {
     font-family: Helvetica, Arial, sans-serif;
-}
-
-.header { /*use these margins for the logo, the move the actual header a little to the right of the logo*/
-    margin: 25px 100px 75px 100px;
-    position: fixed;
-}
-
-nav {
-    align-items: right;
-}
-
-.number {
-    text-align: center;
-}
-
-.tabs {
-    text-align: right;
-    display: inline;
+    margin: 25px auto 25px auto;
+    max-width: 1700px;
+    background-color: yellow;
     
 }
 
-.name {
+
+/****************************** header css ***********************/
+section.consultantInfo { /*use these margins for the logo, the move the actual header a little to the right of the logo*/
+    position: fixed;
+    margin: 0px auto 0px auto;
+    width: 1500px;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    z-index: 10;
+    left: 50%; /*this will position the left edge of the header at 50% of the pages width*/
+    transform: translateX(-50%); /*this will shift the header left by 50% of its own width to center it*/
+}
+/*end of header css*/
+
+
+
+div.info {
+    margin: 10px auto 10px auto;
+    width: 400px;
+    text-align: left;
+    height: 100px;
+    background-color: green;
+}
+
+p.experienceInfo {
     font-size: 18px;
-
+    text-align: justify;
+    position: inline;
+    margin: 10px auto 10px auto;
+    padding: 0px;
 }
 
-.title, .company {
-    font-size: 16px; 
+div.phoneNumber {
+    margin: 10px auto 10px auto;
+    width: 400px;
+    background-color: purple;
+    height: 100px;
 }
+
+p.number {
+    font-size: 18px;
+    text-align: center;
+    position: inline;
+    margin: 10px auto 10px auto;
+}
+
+div.tabs {
+    margin: 10px auto 10px auto;
+    width: 400px;
+    text-align: right;
+    background-color: red;
+    height: 100px;
+}
+
+li {
+    margin-top: 40px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+
+
+
+a {
+    color: black;
+}
+
+a:hover, a.on {
+    color: blue;
+}
+
+li {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+/* revise this css */
+
+
+/* 
+p.name, p.title, p.company {
+    text-align: left;
+    margin: 5px auto 0px auto;
+}
+
+nav {
+    margin: 0px auto 0px auto;
+    width: 1250px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: right;
+    position: inline-block;
+}
+
+*/
+
